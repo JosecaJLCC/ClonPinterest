@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Pinterest</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <!-- Tener <nav> </nav> con #navbar-pinterest -->
+    
+            <!-- El navbar siempre debe de estar en el top de la aplicación -->
+            <nav id="navbar-pinterest">
+                <!-- El icono de pinterest con #pinterest-icon me debe de redireccionar a https://www.pinterest.com -->
+                <div id="icon-pinterest">
+                    <a href="https://www.pinterest.es/" target="_blank">
+                        <img id="pinterest" src="./Assets/Icons/icon_pinterest.webp" alt="">
+                    </a>
+                </div>
+
+                <a href="#"><strong>Inicio</strong></a>
+                <a href="#"><strong>Explorar</strong></a>
+                <a href="#"><strong>Crear</strong></a>
+
+                <!-- El buscador debe de ser <input> con .finder -->
+                <input placeholder="Buscar" class="finder" type="text">
+            
+                <!-- La navbar debe de tener 3 iconos cada uno dentro de <div> </div> a la derecha #notifications #message y #profile-img -->
+                <div id="notifications">
+                
+                    <img src="./Assets/Icons/notify.jpg" alt="">
+                </div>
+                <div id="message">
+                    <img src="./Assets/Icons/mes.png" alt="">
+                </div>
+                <div id="profile-img">
+                    <img src="./Assets/Images/itachi.webp" alt="">
+                </div>
+
+                
+            </nav>
+    
+        </header>
+        
+    
+        <!-- Tener un <main> </main> con #content este debe de contener todas las images -->
+        <main id="content">
+            <!-- Cada imagen debe de estar encerrada en un <div> </div> con la clase .card-imagie -->
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/aries.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/tauro.webp" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/geminis.jpeg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/manigoldo.webp" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/leo.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/virgo.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/escorpio.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/libra.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/sagitario.png" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/capricornio.webp" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/acuario.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/piscis.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/batman.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/bumblublee.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/canvas.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/capitan.jpeg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/tenma.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/dorado.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/vegito.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/elsid.png" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/fenix.jpeg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/hokages.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/itachi.webp" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/wargreymon.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/madara.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/guepardo.avif" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/obito.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/oogway.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/optimus.jpg" alt="">
+            </div>
+            <div class="card-image">
+                <div class="main-icons">
+                    <div class="icons-sub0">
+                        <a href="#"><strong>Guardar</strong></a>
+                    </div>
+                    
+                    <div class="icons-sub1">
+                        <img class="icons" src="./Assets/Icons/subir.png" alt="">
+                        <img class="icons" src="./Assets/Icons/puntos.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <img src="./Assets/Images/vegueta.jpg" alt="">
+            </div>
+            <!-- Por lo menos deben de existir 30 imágenes -->
+    
+    
+    
+            <!-- La .card-image tiene un :hover para mostrar los botones -->
+        </main>
+    </div>
+</body>
+</html>

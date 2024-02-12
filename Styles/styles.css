@@ -3,8 +3,7 @@ body{
     margin: 0px;
     width: 100%;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;    
 }
 
 #container{
@@ -18,24 +17,26 @@ header{
     padding: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center;  
+    box-sizing: border-box;
 }
+
 
 #icon-pinterest a:focus{
     background: none;
 }
 
 nav{
+    width: 100%;
     height: 70px;
     /* border: 2px solid red; */
     background-color: white;
-    display: flex;
+    display: flex;       
     justify-content: space-around;
     align-items: center;
     padding: 5px;
     position: fixed; 
+    z-index: 1;
 }
 
 nav a{
@@ -60,9 +61,9 @@ nav img:hover{
     border:none;
 }
 
-nav img:focus{
+/* nav img:focus{
     border: 3px solid aqua;
-}
+} */
 
 nav > *{
     padding: 5px 10px;
@@ -70,12 +71,20 @@ nav > *{
 
 .finder{   
     border-radius: 30px;
-    width: 820px;
+    width: 820px;    
+    justify-content: stretch;
     height: 40px;
     background-color: #e2e0e0;
     border: none;
     margin:5px;
 }
+
+@media(width<600px){
+    .finder{
+        width: 400px;
+    }
+}
+
 
 .finder:hover{
     background-color: #d0d0d0;
@@ -114,7 +123,18 @@ nav > *{
 #content{
     /* border: 2px solid blue; */
     display: grid;
-    grid-template-columns: repeat(5, 1fr);   
+
+    /* Para evitar usar media querys usamos auto-fill para que el propio navegador le de el tamaño 
+    Mientras la pantalla tenga 230px solo se mostrara una fila, si la pantalla tiene 230*5px entonces mostrara
+    5 columnas ya que la pantalla puede mostrar esa cantidad de columnas. 
+
+    Tambien existe el auto fit que es algo parecido igual a fill 
+    */
+    grid-template-columns: repeat(
+        auto-fill, 
+        minmax(200px, 2fr)
+    );   
+
     grid-gap: 15px;
     padding: 0px 50px 10px 50px
 }
@@ -124,12 +144,14 @@ nav > *{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .card-image img{
     width: 100%;
     height: 250px;
-    border-radius: 20px;
+    border-radius: 20px;  
+    /* border: 2px solid orange; */
 }
 
 
@@ -139,34 +161,36 @@ nav > *{
     position: absolute;
     /* border: 2px solid blue; */
     border-radius: 30px;
-    width: 220px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     justify-content: space-between;
     padding: 5px;
     gap: 5px;
     opacity: 0;
 }
 
-.main-icons:hover{
-    opacity: 1;
-}
-
-
-
-
-
-.card-image .icons{
-    width: 35px;
-    height: 35px;   
-}
-
-
-
 .icons-sub0{
     display: flex;
     align-items: end;
     justify-content: end;
     padding: 5px;
+    /* border: 2px solid green; */
+}
+
+.icons-sub1{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    /* border: 2px solid violet; */
+}
+
+.main-icons:hover{
+    opacity: 1;
+}
+
+.card-image .icons{
+    width: 35px;
+    height: 35px;   
 }
 
 .icons-sub0 a{
@@ -177,13 +201,7 @@ nav > *{
     border-radius: 30px;
 }
 
-.icons-sub1{
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    
-}
-
 .icons-sub1 img{
     padding: 5px;
 }
+
